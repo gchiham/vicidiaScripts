@@ -1,11 +1,13 @@
-#The script automates the process of creating and updating users in the VICIdial system. 
-#It prompts the user to enter a unique User ID and Full Name, then uses this information 
-#to create a new user based on a template (user 9999). After creating the user, it sets up 
-#a corresponding phone configuration for them. The script also includes an update function 
-#to modify user details. Finally, it offers the option to repeat the process, allowing for 
-#multiple users to be created in succession. Each step involves sending specific parameters 
-#to the VICIdial API and handling the responses.
 
+####
+"""
+This script automates the process of creating and updating users in the VICIdial system. 
+It prompts the user for a unique User ID and Full Name, uses these to create a new user 
+based on a template, sets up phone configuration for this user, and updates user details. 
+After each user creation, it asks if the user wants to create another user, allowing for 
+multiple user creations in a sequence. Each step involves sending specific parameters to 
+the VICIdial API and handling responses.
+"""
 
 import requests
 
